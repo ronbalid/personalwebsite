@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  /* overflow-x: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #272829;
+}
+
+footer {
+  height: 30vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: large;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  line-height: 20rem;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.hero span {
+  text-decoration: underline;
+}
+
+.hero img {
+  height: 30rem;
+  width: 40%;
+}
+
+.profile-intro {
+  height: 100vh;
+  font-size: 1.5rem;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-intro img {
+  border-radius: 50%;
+  height: 15rem;
+}
+
+.skills-section {
+  height: 100vh;
+  gap: 5rem;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.skills-section hr {
+  width: 30%;
+  margin: 1rem 0;
+}
+
+.skill {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.skills-section img {
+  float: left;
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+  margin-right: 3rem;
+}
+
+.contactme {
+  height: 70vh;
+  justify-content: center;
+  font-size: larger;
+  text-align: center;
+}
+
+.contactme a {
+  color: white;
+  background-color: #38e54d;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE QUERIES */
+
+@media screen and (min-width: 200px) and (max-width: 576px) {
+  .hero {
+    font-size: 3rem;
+    line-height: 10rem;
+  }
+
+  .profile-intro {
+    font-size: 1.5rem;
+  }
+
+  .profile-intro p {
+    width: 80%;
+  }
+
+  .skills-section {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .skills-section hr {
+    margin-bottom: 1rem;
+    width: 20%;
+    margin: 1rem auto;
+  }
+
+  .skill {
+    width: 85%;
+    height: fit-content;
+  }
+
+  .skills-section img {
+    float: none;
+    margin-bottom: 2rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .contactme {
+    font-size: 1.5rem;
+  }
+
+  .contactme p {
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .contactme a {
+    margin-top: 5rem;
+  }
+
+  footer,
+  footer div {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+}
